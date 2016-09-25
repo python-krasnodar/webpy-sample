@@ -27,4 +27,12 @@ Administrator access interface where they can manage the directory, fill it with
 
 ### Up and running
 
-TODO.
+```sh
+$ sudo apt-get install libpq-dev python-dev virtualenv
+$ virtualenv .venv
+$ source .venv/bin/activate
+$ cp .env.dist .env
+$ docker-compose up -d
+(.venv) $ pip install -r requirements.txt
+(.venv) $ python code.py
+```
